@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%
+}
+
+.first {
+    width: 100%;
+    height: 80px;
+    background: #000000aa;
+    position: fixed;
+  
+}
+.first a{
+    color: white;
+}
+.first-menu {
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    margin: auto;
+
+}
+nav{
+    width: 100%;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    width: 100%;
+    height: 100%;
+}
+
+a:hover {
+    color: #de6666;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.first-logo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.first-logo:hover {
+    cursor: pointer;
+}
+
+/* .extra {
+    position: absolute;
+    bottom: -75px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+} */
+
+.logo {
+width: 80%;
+position: absolute;
+top: -30px;
+left: calc(50% - 40%);
+}
+.logo-wrap{
+    height: 160px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+.logo-black{
+    height: 80px;
+}
+.logo-img{
+    background-color: #000000aa;
+    position: relative;
+}
+
+
+.second{
+    width: 100%;
+    height: 100vh;
+
+}
+.second a{
+    color: white;
+}
+.second-back{
+width: 100%;
+height: 100%;
+background: url("img/back.png");
+background-size: cover;
+}
+.second-blur{
+    width: 100%;
+height: 100%;
+display:flex;
+justify-content:center;
+align-items:center;
+background: rgba(0, 0, 0, 0.5);
+}
+.second-content{
+    width: 65%;
+    height: 30%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.second-help{
+    width: 50%;
+    height: 60px;
+    margin-top: 40px;
+    border: none;
+    background: #de6666;
+    color: white;
+    font-size: 25px;
+    border-radius: 15px;
+}
+.second-help:hover{
+    border: solid 5px #de6666;
+    background: none;
+    transition: 0.3s;
+}
+
+.third{
+    width: 100%;
+    height: 1300px;
+    text-align: center;
+}
+.third-content{
+    width: 85%;
+    height: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr ;
+ column-gap: 15px;
+ row-gap: 15px;
+}
+.third-option{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    color: #de6666;
+    box-shadow: 0px 0px 4px 2px;
+    padding: 15px 15px 15px 15px;
+}
+.third-option:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.3s;
+}
+.to-top{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.to-bottom{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+
+}
+.to-button{
+    width: 150px;
+    height: 50px;
+    background: #de6666;
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
+.to-button:hover{
+    transition: 0.3s;
+    border: solid 3px #de6666;
+    color: #de6666;
+    background: white;
+}
+.third-option-photo{
+    background: url("img/circle.png") no-repeat;
+    background-size: cover;
+}
+.fourth{
+    width: 100%;
+    height: 250px;
+    background: black;
+    text-align: center;
+    color: white;
+}
+.fourth a{
+    color: white;
+}
+.fourth h2:hover, .fourth a:hover{
+    cursor: pointer;
+}
+.fourth img{
+width: 200px;
+height: 100px;
+}
+@media screen and (max-width:1000px){
+h3{
+    font-size: 12px;
+}
+.second h1{
+    font-size: 15px;
+}
+.third-option-photo{
+    width: 130px;
+    height: 130px;
+}
+.third h1{
+    font-size: 20px;
+}
+}
+
+@media screen and(max-width:500px){
+    .third-content{
+        width: 50%;
+    }
+}
